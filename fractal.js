@@ -22,7 +22,7 @@
         lineWidth: 1.2,
         primaryColor: 'rgba(196, 92, 92, ',  // Red accent
         secondaryColor: 'rgba(255, 255, 255, ',  // White
-        pulseSpeed: 0.015
+        pulseSpeed: 0.005
     };
     
     // Node class
