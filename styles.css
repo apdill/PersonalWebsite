@@ -487,6 +487,67 @@ body::before {
 }
 
 /* ===================================
+   Education Subsection
+   =================================== */
+.subsection-title {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: var(--color-white);
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--color-border);
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.education-item {
+    display: flex;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: rgba(17, 17, 17, 0.5);
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-medium);
+}
+
+.education-item:hover {
+    border-color: var(--color-accent);
+}
+
+.education-icon {
+    flex-shrink: 0;
+}
+
+.education-icon svg {
+    width: 40px;
+    height: 40px;
+    color: var(--color-accent);
+}
+
+.education-details h4 {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    color: var(--color-white);
+    margin-bottom: var(--spacing-xs);
+}
+
+.education-details .degree {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.education-date {
+    font-size: 0.8rem;
+    color: var(--color-accent);
+    letter-spacing: 1px;
+}
+
+/* ===================================
    Projects Section
    =================================== */
 .projects-grid {
@@ -556,6 +617,24 @@ body::before {
 .project-links svg {
     width: 20px;
     height: 20px;
+}
+
+.project-label {
+    display: inline-block;
+    font-size: 0.7rem;
+    color: var(--color-accent);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-xs);
+}
+
+.project-card.featured {
+    border-color: var(--color-accent-dark);
+    background: rgba(196, 92, 92, 0.05);
+}
+
+.project-card.featured::before {
+    background: linear-gradient(90deg, var(--color-accent), var(--color-accent-light));
 }
 
 .project-title {
@@ -648,6 +727,20 @@ body::before {
 .social-links svg {
     width: 24px;
     height: 24px;
+}
+
+.contact-location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-md);
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+}
+
+.contact-location svg {
+    color: var(--color-accent);
 }
 
 /* ===================================
