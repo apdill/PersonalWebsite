@@ -290,8 +290,8 @@ body::before {
    Sections
    =================================== */
 .section {
-    padding: var(--spacing-xl) var(--spacing-lg);
-    min-height: 100vh;
+    padding: var(--spacing-lg) var(--spacing-lg);
+    min-height: auto;
     display: flex;
     align-items: center;
 }
