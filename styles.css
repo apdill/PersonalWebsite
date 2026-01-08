@@ -169,7 +169,7 @@ body::before {
 }
 
 .hero-content {
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 .hero-greeting {
@@ -204,6 +204,15 @@ body::before {
     opacity: 0;
 }
 
+.hero-tagline .tagline-static {
+    display: block;
+    line-height: 1.2;
+}
+
+.hero-tagline .tagline-static:first-child {
+    margin-bottom: 0.25rem;
+}
+
 .tagline-dynamic {
     color: var(--color-accent-light);
     font-style: italic;
@@ -212,7 +221,7 @@ body::before {
 .hero-description {
     font-size: 1.1rem;
     color: var(--color-text-muted);
-    max-width: 600px;
+    max-width: 900px;
     margin-bottom: var(--spacing-lg);
     animation: fadeInUp 0.8s ease forwards;
     animation-delay: 0.8s;
