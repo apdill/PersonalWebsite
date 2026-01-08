@@ -158,11 +158,13 @@ body::before {
    Hero Section
    =================================== */
 .hero {
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: var(--spacing-xl) var(--spacing-lg);
+    padding: var(--spacing-lg) var(--spacing-lg);
+    padding-top: calc(var(--spacing-xl) + 60px);
+    padding-bottom: var(--spacing-md);
     position: relative;
 }
 
@@ -635,6 +637,15 @@ body::before {
 
 .project-card.featured::before {
     background: linear-gradient(90deg, var(--color-accent), var(--color-accent-light));
+}
+
+.project-card.upcoming {
+    border-style: dashed;
+    opacity: 0.85;
+}
+
+.project-card.upcoming:hover {
+    opacity: 1;
 }
 
 .project-title {
