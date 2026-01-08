@@ -593,7 +593,7 @@ body::before {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
 }
 
 .project-icon svg {
@@ -642,10 +642,20 @@ body::before {
 .project-card.upcoming {
     border-style: dashed;
     opacity: 0.85;
+    padding: var(--spacing-sm) var(--spacing-md);
 }
 
 .project-card.upcoming:hover {
     opacity: 1;
+}
+
+.project-card.upcoming .project-header {
+    margin-bottom: var(--spacing-xs);
+    min-height: 0;
+}
+
+.project-card.upcoming .project-description {
+    margin-bottom: var(--spacing-sm);
 }
 
 .project-title {
