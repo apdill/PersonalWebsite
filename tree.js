@@ -131,10 +131,12 @@
     {
       id:'fracstack-app', parent:'fracstack', title:'Desktop App',
       x:166,y:425,left:true,path:'M310 418 C265 400 209 431 166 425',
-      artifact:{icon:'fracstack-app.png',caption:'Private desktop app built on the FracStack Python package.',
-        images:[{file:'fracstack-desktop.png',title:'Analysis view',
+      deck:'I built FracStack’s desktop app to measure the fractal dimension of an image and test how much the estimate depends on how I prepare it.',
+      body:'Choose the range of box sizes for one image, or apply the same range to a batch so the measurements are comparable. The app can repeat the analysis at several intensity thresholds, with edge detection on and off, and export the results to a CSV for comparison.',
+      artifact:{icon:'fracstack-app.png',caption:'Private desktop interface for the FracStack Python package.',
+        images:[{file:'fracstack-desktop.png',title:'Choosing the measurement range',
           alt:'FracStack desktop interface with a processed mask beside its log–log scaling plot and fitted dimension.',
-          caption:'For the mask shown here, the fit over box widths of 8–124 pixels gives D = 1.77. The app displays the processed image beside the points used to inspect the fit.'}]}
+          caption:'The fine and coarse cutoffs set which points contribute to the slope. For this branching outline, box widths from 8 to 124 pixels give a capacity dimension of 1.77.'}]}
     },
     {
       id: "published-paper",
